@@ -25,6 +25,10 @@
   padding-right: 1rem;
 }
 
+.text-green {
+  color: green;
+}
+
 body {
   line-height: 1.6;
   font-size: 16px;
@@ -64,4 +68,24 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: underline;
+}
+
+.breadcrumb {
+  padding: 0px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 4px;
+  color: black;
+  content: "/\00a0";
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
