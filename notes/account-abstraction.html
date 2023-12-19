@@ -101,11 +101,13 @@
           alternative authentication methods, but is non-native and
           non-EOA-compatible, meaning that a) EOAs are still required for
           relaying and b) existing EOAs cannot be used as ERC-4337 accounts. By
-          contrast, EIP-3074 is EOA-compatible, but does not allow for gas
-          sponsorship, custom nonce rules or alternative authentication methods.
-          Without an agreed-upon ranking of the merit of different degrees and
-          features, it does not make sense to compare them and claim that one is
-          "better" than the other.
+          contrast, EIP-3074 is EOA-compatible and allows for gas sponsorship,
+          custom nonce rules or alternative authentication methods. However,
+          EIP-3074 has its own shortcomings, such as the requirement for EOA
+          keys to continue being stored and a required consensus change on all
+          EVM networks. Without an agreed-upon ranking of the merit of different
+          degrees and features, it does not make sense to compare them and claim
+          that one is "better" than the other.
         </p>
       </section>
     </div>
