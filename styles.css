@@ -1,18 +1,38 @@
-* {
-  font-family: "PT Mono", monospace;
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .title {
   text-align: center;
   margin-bottom: 0.2em;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .subtitle {
   text-align: center;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 0;
 }
 
@@ -29,6 +49,8 @@
   background-color: #fff;
   width: fit-content;
   padding-right: 1rem;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .text-green {
@@ -41,9 +63,7 @@ body {
   padding: 0 2rem;
   margin: 60px auto;
   max-width: 700px;
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
-    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
-    sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 li {
@@ -54,6 +74,8 @@ h2,
 h2,
 h3 {
   line-height: 1;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
