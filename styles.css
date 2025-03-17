@@ -1,56 +1,70 @@
-.space-mono-regular {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/files/latin-modern-roman-latin-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/files/latin-modern-roman-latin-400-normal.woff")
+      format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
-.space-mono-bold {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/files/latin-modern-roman-latin-700-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/files/latin-modern-roman-latin-700-normal.woff")
+      format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 
-.font-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
+@font-face {
+  font-family: "Latin Modern Roman";
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/files/latin-modern-roman-latin-400-italic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/files/latin-modern-roman-latin-400-italic.woff")
+      format("woff");
+  font-weight: normal;
   font-style: italic;
 }
 
-.space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
+body {
+  font-family: "Latin Modern Roman", Georgia, serif;
+  /* line-height: 1.5; */
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Latin Modern Roman", Georgia, serif;
+  font-weight: bold;
 }
 
 .title {
   text-align: center;
   margin-bottom: 0.2em;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .subtitle {
   text-align: center;
-  font-size: medium;
-  font-weight: 700;
-  margin-top: 0;
-}
-
-.section {
-  border-top-style: solid;
-  border-top-width: 1px;
-  margin-top: 3rem;
+  margin: 0 auto;
 }
 
 .section h2 {
-  top: -0.85rem;
-  position: relative;
-  margin: 0;
-  background-color: #fff;
-  width: fit-content;
-  padding-right: 1rem;
-  font-weight: 500;
-  font-style: normal;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.section h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .text-green {
@@ -63,29 +77,7 @@ body {
   padding: 0 2rem;
   margin: 60px auto;
   max-width: 700px;
-  font-family: "Space Mono", monospace;
 }
-
-li {
-  margin-top: 0.5rem;
-}
-
-h2,
-h2,
-h3 {
-  line-height: 1;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h2 {
-  font-size: 1.4rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
 a:link,
 a:visited,
 .item {
@@ -96,24 +88,4 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: underline;
-}
-
-.breadcrumb {
-  padding: 0px;
-}
-
-ul.breadcrumb li {
-  display: inline;
-}
-
-ul.breadcrumb li + li:before {
-  padding: 4px;
-  color: black;
-  content: "/\00a0";
-}
-
-.notes-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
